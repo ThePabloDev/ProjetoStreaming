@@ -4,7 +4,7 @@ import imagemcapa from './img/capa.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import imgpipoca from './img/pipoca.png'
+import imgdispositivo from './img/dispositivo.png';
 
 function PaginaInicial() {
     return (
@@ -34,6 +34,23 @@ function PaginaInicial() {
                     a diversão está sempre ao seu alcance.
                 </p>
                 <button className='BotaoCadastro BotaoCadastroPosition'><strong>Vamos lá</strong></button>
+                <div className="card">
+                    <div className="card-content">
+                        <p className="card-title">FLICKER</p>
+                        <p className="card-para">Descubra os planos perfeitos para você! De soluções básicas a opções premium, temos tudo para atender às suas necessidades. Escolha sabiamente, escolha agora!</p>
+                        <button className="botao-card"><strong>PLANOS</strong></button>
+                    </div>
+                </div>
+                <div>
+                    <img src={imgdispositivo} alt='imagem de varios dispositivos' className='img-dispositivo' />
+                </div>
+                <div>
+                    <br />
+                    <p className='texto-titulo'><strong>Assista em varios dispositivos</strong></p>
+                    <p className='texto-page'>Assista aos seus conteúdos favoritos em vários dispositivos! Seja no celular, tablet, computador ou Smart TV,
+                        aproveite a flexibilidade de acompanhar suas séries, filmes e vídeos onde quer que esteja. A qualquer hora, em qualquer lugar,
+                        a diversão está garantida. Basta conectar e aproveitar!</p>
+                </div>
             </div>
         </body>
     );
