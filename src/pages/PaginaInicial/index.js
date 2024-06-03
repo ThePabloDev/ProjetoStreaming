@@ -38,7 +38,12 @@ function PaginaInicial() {
                     <div className="card-content">
                         <p className="card-title">FLICKER</p>
                         <p className="card-para">Descubra os planos perfeitos para você! De soluções básicas a opções premium, temos tudo para atender às suas necessidades. Escolha sabiamente, escolha agora!</p>
-                        <button className="botao-card"><strong>PLANOS</strong></button>
+                        <Link to="/Assinatura">
+                            <button className="botao-card">
+                                <strong>PLANOS</strong>
+                            </button>
+                        </Link>
+
                     </div>
                 </div>
                 <div className='alinhar'>
