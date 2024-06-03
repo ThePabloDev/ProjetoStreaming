@@ -8,7 +8,7 @@ import imgdispositivo from './img/dispositivo.png';
 
 function PaginaInicial() {
     return (
-        <body className="pagina-inicial container">
+        <body className="pagina-inicial">
             <Navbar fixed="top">
                 <Container>
                     <Navbar.Brand href="./">
@@ -29,8 +29,8 @@ function PaginaInicial() {
             </div>
             <div className='container-principal '>
                 <p className='texto-titulo'><strong>Filmes, Séries, músicas e streamings</strong></p>
-                <p className='texto-page'>Agora você pode assistir seus filmes e séries favoritos onde e quando quiser!
-                    Seja no conforto do seu sofá, durante a viagem ou até mesmo no intervalo do trabalho,
+                <p className='texto-page'>Agora você pode assistir seus filmes e séries favoritos onde e quando quiser!<br />
+                    Seja no conforto do seu sofá, durante a viagem ou até mesmo no intervalo do trabalho,<br />
                     a diversão está sempre ao seu alcance.
                 </p>
                 <button className='BotaoCadastro BotaoCadastroPosition '><strong>Vamos lá</strong></button>
@@ -47,8 +47,8 @@ function PaginaInicial() {
                 <div>
                     <br />
                     <p className='texto-titulo'><strong>Assista em varios dispositivos</strong></p>
-                    <p className='texto-page'>Assista aos seus conteúdos favoritos em vários dispositivos! Seja no celular, tablet, computador ou Smart TV,
-                        aproveite a flexibilidade de acompanhar suas séries, filmes e vídeos onde quer que esteja. A qualquer hora, em qualquer lugar,
+                    <p className='texto-page'>Assista aos seus conteúdos favoritos em vários dispositivos! Seja no celular, tablet, computador ou Smart TV,<br />
+                        aproveite a flexibilidade de acompanhar suas séries, filmes e vídeos onde quer que esteja. A qualquer hora, em qualquer lugar,<br />
                         a diversão está garantida. Basta conectar e aproveitar!</p>
                 </div>
                 <br />

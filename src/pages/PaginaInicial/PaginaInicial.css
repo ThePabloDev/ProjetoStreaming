@@ -1,7 +1,10 @@
 body, .pagina-inicial{
     background-color: #000000;
     font-family: "Big Shoulders Display", sans-serif;
+    margin: 0;
+    padding: 0;
     width: 100%;
+    height: 100%;
 }
 
 .foto-capa {
@@ -51,8 +54,6 @@ body, .pagina-inicial{
 
 .container-principal{
     text-align: center;
-    display: flex;
-    justify-content: center;
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
@@ -293,6 +294,8 @@ section.card {
   }
   
   .card__description {
+    display: flex;
+    align-items: center;
     margin: 10px 0 0;
     font-size: 14px;
     color: #ffffff;
@@ -305,3 +308,85 @@ section.card {
     color: #ff0000;
     font-size: 25px;
   }
+
+  @media (min-width: 630px) and (max-width: 991.98px) {
+    .foto-capa{
+        width: 1500px;
+    }
+
+    .card{
+        width: 550px;
+    }
+
+    .img-dispositivo{
+        width: 400px;
+    }
+
+    .container-principal{
+        height: 1750px;
+    }
+
+    section.card {
+        width:550px;
+        height: 200px;
+      }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .foto-capa{
+        width: 2500px;
+        height: 500px;
+    }
+
+    .card{
+        width: 850px;
+    }
+
+    .img-dispositivo{
+        width: 400px;
+    }
+
+    .container-principal{
+        height: 1720px;
+    }
+
+    section.card {
+        width: 850px;
+        height: 200px;
+      }
+}
+
+@media (min-width: 1200px) {
+    .foto-capa{
+        width: 2500px;
+        height: 700px;
+    }
+
+    .card{
+        width: 1050px;
+    }
+
+    .img-dispositivo{
+        width: 400px;
+    }
+
+    .container-principal{
+        height: 1850px;
+    }
+
+    section.card {
+        width: 1050px;
+        height: 200px;
+      }
+
+    .texto-titulo{
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .texto-page{
+        font-size: 20px;
+    }
+
+}
+
