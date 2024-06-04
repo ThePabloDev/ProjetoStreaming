@@ -1,0 +1,154 @@
+.usuario {
+    margin-top: auto;
+}
+
+.video-container video {
+    margin-top: 55px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #525252; 
+    z-index: 100;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: white; 
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu ul li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .menu-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .menu-enter {
+    transform: translateX(100%);
+  }
+  
+  .menu-enter-active {
+    transform: translateX(0%);
+  }
+  
+  .menu-exit {
+    transform: translateX(0%);
+  }
+  
+  .menu-exit-active {
+    transform: translateX(100%);
+  }
+  
+  .burger-icon {
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+    z-index: 101;
+    color: #ffff;
+  }
+  
+  .burger-icon svg {
+    font-size: 24px;
+  }
+  
+  .menu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu ul li svg {
+    margin-right: 10px;
+  }
+  
+  .texto-navhome{
+    color: #ffff;
+  }
+  
+  .container-filmes{
+    margin-top: 260px;
+    margin-left: 15px;
+  }
+
+  .texto-titulo-home{
+    color: #ffff;
+  }
+
+  .grid-container {
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    width: 100%;
+    height: auto;
+  }
+  
+  .filme {
+    margin: 15px;
+    width: 130px;
+    height: auto;
+  }
+
+  @media (min-width: 630px) and (max-width: 991.98px) {
+    .video-container video {
+        height: 350px;
+    }
+
+    .container-filmes{
+        margin-top: 380px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .video-container video {
+        height: 450px;
+    }
+
+    .container-filmes{
+        margin-top: 470px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .video-container video {
+        height: 650px;
+    }
+
+    .container-filmes{
+        margin-top: 670px;
+    }
+}

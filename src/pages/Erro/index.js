@@ -1,16 +1,18 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import './erro.css';
 
-function Erro(){
-    return(
-        <div>
-            <h2>Ops! Parece que esssa página não existe!</h2>
-            <span>Encontramos essas páginas aqui:</span>
-            <Link to="/"> Home</Link><br/>
-            <Link to="/Sobre"> Sobre</Link><br/>
-            <Link to="/Contato"> Contato</Link><br/>
-        </div>
-    );
-
+const Erro = () => {
+  return (
+    <div className='error-container'>
+      <div className='error-content'>
+        <h1 style={{ color: 'red' }}>Oops! Algo deu errado...</h1>
+        <p style={{ color: 'black' }}>Parece que encontramos um erro.</p>
+        <p style={{ color: 'black' }}>Por favor, tente novamente mais tarde.</p>
+        {/* Substituindo o botão por um link para a página inicial */}
+        <Link to="/" style={{ backgroundColor: 'red', color: 'white', padding: '10px 20px', textDecoration: 'none', borderRadius: '5px', fontSize: '16px', marginTop: '20px', display: 'inline-block' }}>Ir para a página inicial</Link>
+      </div>
+    </div>
+  );
 }
 
 export default Erro;
