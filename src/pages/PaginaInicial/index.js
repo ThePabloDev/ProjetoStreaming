@@ -9,7 +9,7 @@ import imgdispositivo from './img/dispositivo.png';
 function PaginaInicial() {
     return (
         <body className="pagina-inicial">
-            <Navbar fixed="top">
+            <Navbar fixed="top" className='navbar'>
                 <Container>
                     <Navbar.Brand href="./">
                         <strong className='texto-nav'>FLICKER</strong>
@@ -33,7 +33,9 @@ function PaginaInicial() {
                     Seja no conforto do seu sofá, durante a viagem ou até mesmo no intervalo do trabalho,<br />
                     a diversão está sempre ao seu alcance.
                 </p>
-                <button className='BotaoCadastro BotaoCadastroPosition '><strong>Vamos lá</strong></button>
+                <Link to='/Cadastro'>
+                    <button className='BotaoCadastro BotaoCadastroPosition '><strong>Vamos lá</strong></button>
+                </Link>
                 <div className="card">
                     <div className="card-content">
                         <p className="card-title">FLICKER</p>

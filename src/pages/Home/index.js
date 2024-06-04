@@ -38,7 +38,7 @@ const Home = () => {
 
     return (
         <div className="home-container">
-            <Navbar>
+            <Navbar className='nav-home'>
                 <Container>
                     <Navbar.Brand href="./">
                         <strong className='texto-navhome'>FLICKER</strong>
@@ -76,7 +76,7 @@ const Home = () => {
             </Navbar>
 
             <section className="video-container">
-                <video id="home-video" muted autoPlay loop>
+                <video id="home-video" autoPlay loop>
                     <source src={trailer} type="video/mp4" />
                 </video>
             </section>

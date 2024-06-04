@@ -21,7 +21,7 @@ function Assinatura() {
                 </Container>
             </Navbar>
             <div>
-                <p className='texto-titulo'><strong>ESCOLHA O MELHOR PLANO <br />PARA VOCÊ</strong></p>
+                <p className='texto-titulo-assinatura'><strong>ESCOLHA O MELHOR PLANO <br />PARA VOCÊ</strong></p>
             </div>
             <div className="card-assinatura">
                 <div className="header">

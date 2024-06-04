@@ -1,4 +1,4 @@
-body, .Assinatura{
+body{
     background-color: #000000;
     font-family: "Big Shoulders Display", sans-serif;
     margin: 0;
@@ -36,7 +36,6 @@ body, .Assinatura{
 }
 
   .card-assinatura {
-    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -112,8 +111,8 @@ body, .Assinatura{
   }
 
 
-.texto-titulo{
-    padding-top: 20px;
+.texto-titulo-assinatura{
+    margin-top: 30px;
     color: #ffffff;
     text-align: center;
     font-size: 16px;
